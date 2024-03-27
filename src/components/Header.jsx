@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../assets/logo.png'
-import { HiMagnifyingGlass, HiMoon } from "react-icons/hi2";
+import { HiMagnifyingGlass } from "react-icons/hi2";
 
 function Header() {
   return (

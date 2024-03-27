@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="bg-[#373b69] h-[100vh]">
+    <div className="bg-[#373b69] min-h-[100vh]">
       <Header />
       <Home />
     </div>
