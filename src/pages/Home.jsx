@@ -17,7 +17,6 @@ function Home() {
   useEffect(() => {
     getAllGameList();
     getPlatformLists();
-    console.log("gameGenreList", gameGenreList);
   }, []);
 
   const getAllGameList = async () => {
@@ -33,7 +32,6 @@ function Home() {
   const getGameByGenreList = async (id) => {
     setLoading(true);
     const genreGames = await api.getGameByGenreId(id);
-    console.log("genreGames", genreGames);
     setGameGenreList(genreGames);
     setTimeout(() => {
       setLoading(false);

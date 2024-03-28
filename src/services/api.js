@@ -6,11 +6,11 @@ const instance = axios.create({
 });
 
 const getGenreList = async () =>{
-    const genre = await instance.get("/genres?key=" + key)
+    const genre = await instance.get(`/genres?key=${key}`)
     return genre.data.results
 }
 const getAllGame = async () =>{
-    const gameList = await instance.get("/games?key=" + key);
+    const gameList = await instance.get(`/games?key=${key}`);
     return gameList.data.results
 }
 const getGameDetail = async (gameId) => {
@@ -18,7 +18,7 @@ const getGameDetail = async (gameId) => {
     return gameDetail.data
 }
 const getPlatformList = async () =>{
-    const platformList = await instance.get("/platforms?key=" + key);
+    const platformList = await instance.get(`/platforms?key=${key}`);
     return platformList.data.results
 }
 const getGameByGenreId = async (genreId) =>{
